@@ -1,12 +1,33 @@
-# React + Vite
+# Project Updates: Carousel and UI Enhancements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This document outlines the significant changes and improvements made to the project's frontend, primarily focusing on the main image carousel and related UI components.
 
-Currently, two official plugins are available:
+## Summary of Work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Over the course of our collaboration, the following key tasks have been accomplished:
 
-## Expanding the ESLint configuration
+1.  **Initial Project Context Setup**: Established a clear understanding of the existing project structure and dependencies.
+2.  **SemiNavbar Integration & Styling**:
+    *   Integrated the `SemiNavbar` component directly into the `Carousel` component.
+    *   Adjusted its positioning and styling to ensure a transparent background, allowing for image visibility behind it.
+3.  **React Icons Installation**:
+    *   Installed the `react-icons` library to enable the use of various icon sets, including Font Awesome (Fa) and Ionicons (Io5).
+4.  **Booking Component Positioning**:
+    *   Precisely positioned the `Booking` component at the bottom center of the `Carousel` for optimal user access.
+5.  **Dynamic Image Carousel Implementation**:
+    *   **Initial GSAP Integration**: Developed a basic image carousel using GSAP for smooth fade transitions between slides.
+    *   **Sliding Animation with GSAP**: Refactored the carousel to implement a horizontal sliding animation, ensuring all images are rendered and their container is animated.
+    *   **Dynamic Details per Slide**: Enhanced the carousel to display unique `Details` for each image slide. This involved restructuring the data to associate details with each image and passing them as props to the `Details` component, ensuring content relevance.
+    *   **Seamless Infinite Loop (GSAP)**: Implemented logic to create a continuous, infinite loop for the GSAP-based slider, preventing abrupt "snap back" effects.
+6.  **Transition to `react-responsive-carousel`**:
+    *   Replaced the custom GSAP implementation with the `react-responsive-carousel` library for a more robust and feature-rich carousel solution.
+    *   Addressed initial visibility issues with the `Details` component within the new library's structure.
+7.  **Migration to Swiper.js for Advanced Looping**:
+    *   Recognizing limitations in `react-responsive-carousel` for truly seamless infinite looping, the carousel was migrated to **Swiper.js**.
+    *   Swiper.js was configured to provide a smooth, continuous loop from the last slide back to the first without any reverse animation.
+    *   Integrated custom left and right navigation buttons for manual slide control.
+    *   Styled the navigation buttons to have black chevron icons on a white background for improved visibility and aesthetics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Current State
+
+The project now features a highly functional and visually appealing image carousel powered by Swiper.js, complete with dynamic content for each slide, seamless infinite looping, and user-friendly navigation controls.
