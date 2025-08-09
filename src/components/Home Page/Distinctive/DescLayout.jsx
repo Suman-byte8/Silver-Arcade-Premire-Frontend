@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "../Carousel/Slider";
-import FullLogo from "../../Fulllogo";
+import FullLogo from "../../FullLogo";
 
 const DescLayout = ({ desc }) => {
   if (!desc) {
