@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FullLogo from "../../Fulllogo";
+import FullLogo from "../../FullLogo";
 import DescLayout from "./DescLayout";
 
 const Distinctive = () => {

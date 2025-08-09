@@ -36,3 +36,17 @@ Over the course of our collaboration, the following key tasks have been accompli
 *   **Image Slider Integration**: Integrated the Swiper.js slider to display a gallery of images for each brand.
 *   **State Management**: Used React's `useState` hook to manage the state of the selected brand.
 *   **Component Reusability**: The `DescLayout` and `Slider` components are designed to be reusable.
+
+## Why Book With Us Section
+
+*   **Component:** `src/components/Home Page/Curated Offers/WhyBookWIthUS.jsx`
+*   **Description:** This component highlights the key benefits of booking directly with the company. It is designed to build trust and incentivize users to book through the platform.
+*   **Features:**
+    *   Displays a clear "Why Book With Us" title.
+    *   Integrates the company's `FullLogo`.
+    *   Showcases key advantages with corresponding icons from `react-icons`:
+        *   **Best Rates Guaranteed**: Emphasized with a rupee sign icon.
+        *   **Member Rates**: Indicated with a user icon.
+        *   **Special Offers**: Highlighted with a tags icon.
+        *   **Wi-Fi**: Represented with a Wi-Fi icon.
+*   **Styling:** The component uses Tailwind CSS for styling, featuring a clean, modern look with a shadow effect to make it stand out.
