@@ -6,37 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import Details from "./Details";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import banner1 from "../../../assets/Home/banner1.jpeg";
-import banner2 from "../../../assets/Home/banner2.jpg";
-import banner3 from "../../../assets/Home/banner3.jpg";
 
-const Slider = () => {
-  const slides = [
-    {
-      image: banner1,
-      details: {
-        title: "World's 9th LEED Zero Water Certified Hotel",
-        description:
-          "ITC Grand Bharat is 9th globally to be awarded the LEED Zero certification award",
-      },
-    },
-    {
-      image:banner2,
-      details: {
-        title: "Luxury Redefined",
-        description:
-          "Experience unparalleled luxury and comfort at our exquisite hotels.",
-      },
-    },
-    {
-      image:banner3,
-      details: {
-        title: "Unforgettable Moments",
-        description:
-          "Create lasting memories with our world-class amenities and services.",
-      },
-    },
-  ];
+
+const Slider = ({slides,showDetails, classes}) => {
+
 
   return (
     <div className="w-full h-full relative">
@@ -58,14 +31,19 @@ const Slider = () => {
               <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className={`w-full h-full object-cover ${classes}`}
               />
-              <div className="absolute inset-0 flex items-center justify-start left-20">
+              {
+                showDetails?
+                <div className="absolute inset-0 flex items-center justify-start left-20">
                 <Details
                   title={slide.details.title}
                   description={slide.details.description}
                 />
-              </div>
+              </div>:
+              <></>                
+              }
+             
             </div>
           </SwiperSlide>
         ))}

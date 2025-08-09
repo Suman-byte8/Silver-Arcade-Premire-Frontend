@@ -28,6 +28,11 @@ Over the course of our collaboration, the following key tasks have been accompli
     *   Integrated custom left and right navigation buttons for manual slide control.
     *   Styled the navigation buttons to have black chevron icons on a white background for improved visibility and aesthetics.
 
-## Current State
+## Distinctive Brands Section
 
-The project now features a highly functional and visually appealing image carousel powered by Swiper.js, complete with dynamic content for each slide, seamless infinite looping, and user-friendly navigation controls.
+*   **Interactive Brand Showcase**: Implemented an interactive section to display the company's distinctive hotel brands.
+*   **Dynamic Content Display**: When a user clicks on a brand link, the corresponding description and image gallery are displayed dynamically.
+*   **Overlapping Layout**: Created a visually appealing overlapping layout for the description and image gallery using Tailwind CSS.
+*   **Image Slider Integration**: Integrated the Swiper.js slider to display a gallery of images for each brand.
+*   **State Management**: Used React's `useState` hook to manage the state of the selected brand.
+*   **Component Reusability**: The `DescLayout` and `Slider` components are designed to be reusable.
