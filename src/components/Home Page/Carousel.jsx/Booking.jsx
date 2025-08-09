@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { FaBed, FaCalendarAlt, FaSearch } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 
 const Booking = () => {
+    // function for getting current date
+    const [date, setDate] = useState()
+    const getCurrentDate = () => {
+        const today = new Date();
+        const dd = String(today.getDate()).padStart(2, '0');
+        const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        const yyyy = today.getFullYear();
+        // return `${dd}/${mm}/${yyyy}`;
+        setDate(`${dd}/${mm}/${yyyy}`);
+    };
+    useEffect(() => {
+        getCurrentDate();
+    }, []);
   return (
     <div className="w-full max-w-4xl">
       <div className="w-full bg-white shadow-md flex items-center justify-between p-3 rounded-lg">
@@ -15,7 +28,7 @@ const Booking = () => {
         <div className="_date flex items-center">
           <FaCalendarAlt className=" mr-2" />
           <span className="outline-none ">
-            Check-in - Check-out
+           {date}
           </span>
         </div>
         <div className="_room flex items-center">

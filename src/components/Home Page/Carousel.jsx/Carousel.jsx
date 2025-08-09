@@ -7,10 +7,7 @@ const Carousel = () => {
     <div className="w-full">
       <div className="carousel-container relative w-full h-[90vh] bg-gray-200 flex items-center justify-center overflow-hidden">
         <SemiNavbar />
-
-
         <Slider />
-
         <div className="absolute bottom-0 w-full flex justify-center pb-4 z-10">
           <Booking />
         </div>
