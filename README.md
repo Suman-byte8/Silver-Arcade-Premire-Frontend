@@ -50,3 +50,27 @@ Over the course of our collaboration, the following key tasks have been accompli
         *   **Special Offers**: Highlighted with a tags icon.
         *   **Wi-Fi**: Represented with a Wi-Fi icon.
 *   **Styling:** The component uses Tailwind CSS for styling, featuring a clean, modern look with a shadow effect to make it stand out.
+
+## Footer Section
+
+*   **Component:** `src/components/Footer.jsx`
+*   **Description:** A comprehensive footer for the website, providing social media links, navigation, and copyright information.
+*   **Features:**
+    *   **Social Media Integration:** Includes icons for major social platforms like Twitter, YouTube, Instagram, and Facebook, using `react-icons`.
+    *   **Brand Logo:** Displays the company's `FullLogo`.
+    *   **Navigation Links:** Provides quick links to important pages like "About," "Contact," "Privacy Policy," and "Terms of Service."
+    *   **Copyright Information:** Shows the current year and company name for copyright purposes.
+
+## Deployment & Bug Fixes
+
+This section documents critical fixes and updates made to ensure successful deployment and enhance functionality.
+
+*   **Netlify Build Errors:**
+    *   **Issue:** The application failed to build on Netlify due to case-sensitivity issues in import paths. This is a common problem when developing on a case-insensitive OS (like Windows) and deploying to a case-sensitive OS (like Linux).
+    *   **Resolution:** Corrected the casing in the following import statements:
+        *   In `src/pages/Home.jsx`, changed `../components/Home Page/Curated Offers/offers` to `../components/Home Page/Curated Offers/Offers`.
+        *   In `src/components/Home Page/Distinctive/DescLayout.jsx`, changed `../../Fulllogo` to `../../FullLogo`.
+
+*   **Contact Us Map:**
+    *   **Issue:** The map in the "Contact Us" section was displaying a default location.
+    *   **Resolution:** Updated the `iframe` `src` in `src/components/Home Page/Contact Us/Contact.jsx` to use a Google Maps embed URL with the specific coordinates provided by the user, ensuring the correct location is displayed.
