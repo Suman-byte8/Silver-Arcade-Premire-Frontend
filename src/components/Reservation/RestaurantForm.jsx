@@ -4,7 +4,7 @@ import { FaBuilding, FaUtensils, FaUser, FaInfoCircle, FaCalendarAlt, FaClock, F
 export default function RestaurantForm() {
   return (
     <div className="flex-1 p-8">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Selection Fields */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">SELECT CITY</label>
@@ -79,7 +79,7 @@ export default function RestaurantForm() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-2">PLEASE SHARE ADDITIONAL DETAILS</label>
           <div className="flex items-start border border-gray-300 rounded-lg px-3 py-3">
             <svg className="text-gray-500 mr-2 mt-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +119,7 @@ export default function RestaurantForm() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-2">Guest Email</label>
           <div className="flex items-center border border-gray-300 rounded-lg px-3 py-3">
             <FaEnvelope className="text-gray-500 mr-2" />
@@ -132,7 +132,7 @@ export default function RestaurantForm() {
         </div>
 
         {/* Security and Consent */}
-        <div className="col-span-2 flex items-center gap-2 mb-4">
+        <div className="col-span-1 md:col-span-2 flex items-center gap-2 mb-4">
           <input type="checkbox" className="w-4 h-4" />
           <span className="text-sm text-gray-700">I'm not a robot</span>
           <div className="ml-4 flex items-center gap-2">
@@ -146,7 +146,7 @@ export default function RestaurantForm() {
           </div>
         </div>
 
-        <div className="col-span-2 flex items-start gap-2 mb-6">
+        <div className="col-span-1 md:col-span-2 flex items-start gap-2 mb-6">
           <input type="checkbox" className="w-4 h-4 mt-1" />
           <span className="text-sm text-gray-700">
             By submitting request, I agree to & accept the <a href="#" className="text-blue-600">TnC</a> of the website & grant consent for using this information for product & promotional offers.
@@ -154,7 +154,7 @@ export default function RestaurantForm() {
         </div>
 
         {/* Submit Button */}
-        <div className="col-span-2 flex justify-center">
+        <div className="col-span-1 md:col-span-2 flex justify-center">
           <button className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-lg text-lg font-medium">
             PLACE TABLE RESERVATION REQUEST
           </button>

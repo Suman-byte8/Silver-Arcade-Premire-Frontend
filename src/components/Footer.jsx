@@ -5,10 +5,7 @@ import FullLogo from "./FullLogo";
 
 const Footer = () => {
   return (
-    <footer className="bg-white mt-12">
-      {/* Social Handles */}
-      
-
+    <footer className="bg-white mt-12 mb-18 md:mb-4">
       {/* Bottom Row */}
       <div className="border-t border-gray-300">
         <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">

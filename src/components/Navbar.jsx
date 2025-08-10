@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
 
 
 // Define the navigation links
@@ -15,16 +16,33 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useLayoutEffect(() => {
+    if (isMenuOpen) {
+      gsap.fromTo(
+        mobileMenuRef.current,
+        { y: "-100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power3.out" }
+      );
+    }
+  }, [isMenuOpen]);
+
   return (
-    <nav className="bg-[#5C5E60] h-[40px] flex items-center p-[20px] w-full justify-between">
+    <nav className="bg-[#5C5E60] h-[40px] flex items-center p-[20px] w-full justify-between relative z-100">
       {/* menu and logo */}
       <div className="text-white  flex items-center justify-between gap-4">
-        <FaBars className="text-xl cursor-pointer" />
+        <FaBars className="text-xl cursor-pointer md:hidden" onClick={toggleMenu} />
         <h3 className="font-semibold">SILVER ARCADE PREMIRE</h3>
       </div>
 
-      {/* navigation links */}
-      <div className="">
+      {/* navigation links for desktop */}
+      <div className="hidden md:block">
         <ul className="">
           {navLinks.map((link, index) => (
             <li key={index} className="inline-block mx-2">
@@ -35,6 +53,21 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+
+      {/* mobile menu */}
+      {isMenuOpen && (
+        <div ref={mobileMenuRef} className="absolute top-[40px] left-0 w-full bg-[#5C5E60] md:hidden">
+          <ul>
+            {navLinks.map((link, index) => (
+              <li key={index} className="p-4 text-center border-b border-gray-700">
+                <Link to={link.path} className="text-white hover:text-gray-300" onClick={toggleMenu}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

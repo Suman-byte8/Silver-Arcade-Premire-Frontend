@@ -23,7 +23,7 @@ export default function ReservationPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         {/* Sidebar */}
         <ReservationSidebar 
           activeSection={activeSection} 
@@ -31,7 +31,7 @@ export default function ReservationPage() {
         />
 
         {/* Main Content */}
-        <div className="flex-1 flex">
+        <div className="flex-1 flex flex-col lg:flex-row">
           {/* Left Content */}
           <div className="flex-1">
             {renderActiveForm()}
@@ -44,3 +44,4 @@ export default function ReservationPage() {
     </div>
   );
 }
+

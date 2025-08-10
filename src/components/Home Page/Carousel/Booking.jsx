@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 import { FaBed, FaCalendarAlt, FaSearch } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Booking = () => {
     // function for getting current date
@@ -17,36 +18,41 @@ const Booking = () => {
         getCurrentDate();
     }, []);
   return (
-    <div className="w-full max-w-4xl">
-      <div className="w-full bg-white shadow-md flex items-center justify-between p-3 rounded-lg">
+    <div className="w-full max-w-4xl shadow-2xl p-2 bg-white md:bg-transparent">
+      <Link to="/reservation" className="w-full bg-white  flex items-center justify-between p-5 md:p-3 rounded-lg border-[1px] border-gray-500 md:border-0">
         <div className="_search flex items-center">
           <FaSearch className=" mr-2" />
           <span className="outline-none ">
             City, Hotel, Airport code
           </span>
         </div>
-        <div className="_date flex items-center">
+
+        <div className="_date md:flex items-center hidden">
           <FaCalendarAlt className=" mr-2" />
           <span className="outline-none ">
            {date}
           </span>
         </div>
-        <div className="_room flex items-center">
+
+        <div className="_room md:flex items-center hidden">
           <FaBed className=" mr-2" />
           <span className="outline-none ">1 Room</span>
         </div>
-        <div className="_People flex items-center">
+
+        <div className="_People md:flex items-center hidden">
           <IoPeopleSharp className=" mr-2" />
           <span className="outline-none ">
             2 Adults, 0 Children
           </span>
         </div>
+
         <div className="_bookingButton">
-          <button className="bg-[#5c5e60] text-white rounded-lg px-4">
+          <button className="bg-[#5c5e60] text-white rounded-lg px-2 md:px-4">
             Book Now
           </button>
         </div>
-      </div>
+
+      </Link>
     </div>
   );
 };

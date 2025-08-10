@@ -8,7 +8,7 @@ import HotelVideo from "../assets/Home/Videos/HotelVideo.mp4";
 const AboutUs = () => {
 
   return (
-    <div className="bg-white min-h-screen flex flex-col px-12">
+    <div className="bg-white min-h-screen flex flex-col px-4 md:px-12">
       {/* Hero Section */}
       <div className="relative p-3">
         {/* Commented out image - keeping for reference */}
@@ -25,7 +25,7 @@ const AboutUs = () => {
           muted
           loop
           playsInline
-          className="w-full h-[400px] object-cover rounded-lg"
+          className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover rounded-lg"
         >
           Your browser does not support the video tag.
         </video>

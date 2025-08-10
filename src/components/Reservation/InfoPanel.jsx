@@ -3,7 +3,7 @@ import { FaRupeeSign, FaCheck, FaTag, FaWifi } from "react-icons/fa";
 
 export default function InfoPanel() {
   return (
-    <div className="w-80 bg-gray-50 p-6 border-l border-gray-300">
+    <div className="w-full lg:w-80 bg-gray-50 p-6 border-l border-gray-300">
       <h2 className="text-xl font-light text-gray-600 mb-6">Why book with us?</h2>
       <div className="space-y-4">
         <div className="flex items-center gap-3">
@@ -25,4 +25,4 @@ export default function InfoPanel() {
       </div>
     </div>
   );
-} 
+}

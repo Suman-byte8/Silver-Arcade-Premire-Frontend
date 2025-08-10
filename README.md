@@ -36,6 +36,7 @@ Over the course of our collaboration, the following key tasks have been accompli
 *   **Image Slider Integration**: Integrated the Swiper.js slider to display a gallery of images for each brand.
 *   **State Management**: Used React's `useState` hook to manage the state of the selected brand.
 *   **Component Reusability**: The `DescLayout` and `Slider` components are designed to be reusable.
+*   **Responsive Layout (`DescLayout.jsx`)**: Ensured the `DescLayout` component is responsive, with the image section moving to the top and text below it on smaller screens.
 
 ## Why Book With Us Section
 
@@ -50,6 +51,7 @@ Over the course of our collaboration, the following key tasks have been accompli
         *   **Special Offers**: Highlighted with a tags icon.
         *   **Wi-Fi**: Represented with a Wi-Fi icon.
 *   **Styling:** The component uses Tailwind CSS for styling, featuring a clean, modern look with a shadow effect to make it stand out.
+*   **Responsive Layout**: Made the component responsive, ensuring it displays as a one-liner flex layout that wraps appropriately on smaller screens.
 
 ## Footer Section
 
@@ -61,15 +63,50 @@ Over the course of our collaboration, the following key tasks have been accompli
     *   **Navigation Links:** Provides quick links to important pages like "About," "Contact," "Privacy Policy," and "Terms of Service."
     *   **Copyright Information:** Shows the current year and company name for copyright purposes.
 
-## About Us Page
+## Responsive Design Enhancements
 
-*   **Page:** `src/pages/AboutUs.jsx`
-*   **Description:** A comprehensive "About Us" page that provides visitors with a deeper understanding of the hotel's brand, values, and offerings.
-*   **Components:**
-    *   **`IntroText.jsx`**: A welcoming text that introduces the hotel and its unique selling propositions.
-    *   **`Amenities.jsx`**: Showcases the hotel's amenities, such as the rooftop lounge, bar, and fine dining, using a card-based layout.
-    *   **`Service.jsx`**: Highlights the exceptional services offered, including 24/7 concierge, luxury spa, and event planning.
-    *   **`Gallery.jsx`**: A photo gallery that provides a visual tour of the hotel.
+This section details the comprehensive responsive design improvements implemented across various components and pages to ensure optimal viewing and interaction on diverse devices.
+
+*   **Offers Display Logic (`Offers.jsx`)**:
+    *   Modified the `Offers.jsx` component to dynamically display offers based on screen size.
+    *   On mobile, only the first offer is shown.
+    *   On medium screens and above, up to three offers are displayed.
+    *   The "View All Offers" button now correctly redirects to the `/our-offers` route, where all available offers are listed.
+    *   Updated `Card.jsx` to accept and apply responsive classes.
+
+*   **Main Navbar (`Navbar.jsx`)**:
+    *   Implemented a responsive design for the main navigation bar.
+    *   On smaller screens, a mobile menu (hamburger icon) is used to toggle the visibility of navigation links.
+    *   Integrated a smooth slide-in animation for the mobile menu using GSAP (`gsap` library).
+
+*   **Semi-Navbar (`SemiNavbar.jsx`)**:
+    *   Made the semi-navbar responsive without relying on a hamburger menu.
+    *   All navigation links are now always visible and wrap responsively on smaller screens.
+    *   The hamburger icon and associated mobile menu logic have been removed.
+
+*   **Reservation Page (`ReservationPage.jsx` and related components)**:
+    *   **`ReservationPage.jsx`**: Updated the main layout to use `flex-col md:flex-row` for the sidebar and main content, and `flex-col lg:flex-row` for the form and info panel.
+    *   **`ReservationSidebar.jsx`**: Adjusted the sidebar's width to be `w-full md:w-64` for responsiveness.
+    *   **`InfoPanel.jsx`**: Modified the info panel's width to be `w-full lg:w-80`.
+    *   **Form Components (`AccommodationForm.jsx`, `RestaurantForm.jsx`, `MeetingWeddingForm.jsx`)**: 
+        *   Converted side-by-side form field layouts to stack vertically on smaller screens using `flex-col md:flex-row` or `grid-cols-1 md:grid-cols-2`.
+
+*   **Our Rooms Page (`OurRooms.jsx`)**:
+    *   Enhanced responsiveness by adding horizontal padding (`px-4`) to the main container.
+    *   Adjusted the search bar and filter dropdown to take full width on small screens (`w-full`) and adapt appropriately on larger screens (`sm:max-w-md`, `sm:w-auto`).
+
+*   **Facilities Page (`Facilities.jsx`)**:
+    *   Improved responsiveness by removing redundant Material-UI `Grid` components and relying solely on Tailwind CSS grid classes (`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`).
+    *   Adjusted horizontal padding to `px-4 md:px-12` for better mobile display.
+
+*   **About Us Page (`AboutUs.jsx`)**:
+    *   Enhanced responsiveness by adjusting the main container's horizontal padding to `px-4 md:px-12`.
+    *   Made the hero video's height responsive (`h-[200px] sm:h-[300px] md:h-[400px]`).
+
+*   **Our Heart Malda Page (`HeartMalda.jsx`)**:
+    *   Improved responsiveness of the hero video's height (`h-64 sm:h-80 md:h-96`).
+    *   Made text sizes in the introduction section responsive (`text-3xl sm:text-4xl` for `h2`, `text-lg sm:text-xl` for `p`).
+    *   Adjusted image height within feature cards (`h-48 sm:h-56 md:h-64`) and removed fixed min/max heights from content areas.
 
 ## Deployment & Bug Fixes
 

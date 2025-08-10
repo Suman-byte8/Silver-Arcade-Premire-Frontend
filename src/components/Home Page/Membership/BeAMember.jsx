@@ -3,7 +3,7 @@ import FullLogo from '../../FullLogo'
 
 const BeAMember = () => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row border-2 border-gray-200 m-8">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col-reverse md:flex-row border-2 border-gray-200 m-8">
     {/* Left Section */}
     <div className="flex-1 p-6 flex flex-col justify-center gap-4">
       {/* Logo & Title */}

@@ -4,7 +4,7 @@ import { FaBuilding, FaCalendarAlt, FaUser, FaInfoCircle, FaBed, FaPhone, FaEnve
 export default function MeetingWeddingForm() {
   return (
     <div className="flex-1 p-8">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Destination */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">DESTINATION</label>
@@ -80,7 +80,7 @@ export default function MeetingWeddingForm() {
         </div>
 
         {/* Additional Details */}
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-2">PLEASE SHARE ADDITIONAL DETAILS</label>
           <div className="flex items-start border border-gray-300 rounded-lg px-3 py-3">
             <svg className="text-gray-500 mr-2 mt-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ export default function MeetingWeddingForm() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
           <div className="flex items-center border border-gray-300 rounded-lg px-3 py-3">
             <FaEnvelope className="text-gray-500 mr-2" />
@@ -133,7 +133,7 @@ export default function MeetingWeddingForm() {
         </div>
 
         {/* Event Requires Rooms */}
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2">
           <label className="block text-sm font-medium text-gray-700 mb-2">DOES YOUR EVENT REQUIRE ROOMS?</label>
           <div className="flex gap-6 mt-2">
             <label className="flex items-center gap-2">
@@ -148,7 +148,7 @@ export default function MeetingWeddingForm() {
         </div>
 
         {/* reCAPTCHA */}
-        <div className="col-span-2 flex items-center gap-2 mb-6">
+        <div className="col-span-1 md:col-span-2 flex items-center gap-2 mb-6">
           <input type="checkbox" className="w-4 h-4" />
           <span className="text-sm text-gray-700">I'm not a robot</span>
           <div className="ml-4 flex items-center gap-2">
@@ -164,4 +164,4 @@ export default function MeetingWeddingForm() {
       </div>
     </div>
   );
-} 
+}  

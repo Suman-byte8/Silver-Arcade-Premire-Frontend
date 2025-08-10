@@ -16,7 +16,7 @@ const Carousel = () => {
       },
     },
     {
-      image:banner2,
+      image: banner2,
       details: {
         title: "Luxury Redefined",
         description:
@@ -24,7 +24,7 @@ const Carousel = () => {
       },
     },
     {
-      image:banner3,
+      image: banner3,
       details: {
         title: "Unforgettable Moments",
         description:
@@ -34,11 +34,11 @@ const Carousel = () => {
   ];
   
   return (
-    <div className="w-full">
-      <div className="carousel-container relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] bg-gray-200 flex items-center justify-center overflow-hidden">
+    <div className="w-full relative ">
+      <div className="carousel-container md:relative w-full sm:h-[70vh] md:h-[80vh] lg:h-[90vh] bg-gray-200 flex items-center justify-center">
         <SemiNavbar />
-        <Slider slides={slides} showDetails={true}/>
-        <div className="absolute bottom-0 w-full flex justify-center pb-2 sm:pb-4 z-10">
+        <Slider slides={slides} showDetails={true} />
+        <div className="fixed md:absolute bottom-0 left-0 right-0 flex justify-center md:pb-4 z-100 ">
           <Booking />
         </div>
       </div>

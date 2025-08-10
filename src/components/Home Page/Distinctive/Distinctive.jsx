@@ -72,7 +72,7 @@ const Distinctive = () => {
   };
 
   return (
-    <div className="w-full py-8 sm:py-12 pb-16 sm:pb-20 m-auto flex flex-col items-center justify-center gap-4 px-4 sm:px-6 lg:px-8">
+    <div className="w-full mt-[10ch] md:mt-0 py-8 sm:py-12 pb-16 sm:pb-20 m-auto flex flex-col items-center justify-center gap-4 px-4 sm:px-6 lg:px-8 relative z-10">
       {/* logo */}
       <FullLogo isFlex={true}/>
       
@@ -92,7 +92,7 @@ const Distinctive = () => {
       </div>
 
       {/* links */}
-      <div className="_links flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base lg:text-lg px-4">
+      <div className="_links flex flex-wrap items-center justify-center  sm:gap-6 md:gap-8 text-sm sm:text-base lg:text-lg px-4">
         {links.map((link, index) => (
           <a
             key={index}

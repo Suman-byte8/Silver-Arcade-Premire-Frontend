@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
-const Card = ({offers}) => {
+const Card = ({offers, className}) => {
     
   return (
-    <div className="w-[360px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+    <div className={`w-[360px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-200 ${className}`}>
     {/* Image */}
     <div className="w-full h-64 overflow-hidden">
       <img

@@ -189,7 +189,7 @@ export default function AccommodationForm() {
       </div>
 
       {/* Arrival and Departure */}
-      <div className="flex gap-6 mb-6">
+      <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="flex-1 relative">
           <label className="block text-sm font-medium text-gray-700 mb-2">ARRIVAL</label>
           <div 
@@ -235,7 +235,7 @@ export default function AccommodationForm() {
       </div>
 
       {/* Room and Guest Details */}
-      <div className="flex gap-6 mb-6">
+      <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="flex-1 relative">
           <div 
             className="flex items-center border border-gray-300 rounded-lg px-3 py-3 cursor-pointer hover:border-gray-400"
@@ -340,7 +340,7 @@ export default function AccommodationForm() {
       {/* Special Codes or Rates */}
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">SPECIAL CODES OR RATES</label>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1">
             <div className="flex items-center border border-gray-300 rounded-lg px-3 py-3">
               <FaTag className="text-gray-500 mr-2" />
@@ -381,4 +381,4 @@ export default function AccommodationForm() {
       </button>
     </div>
   );
-} 
+}  

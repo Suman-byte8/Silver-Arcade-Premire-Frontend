@@ -4,7 +4,7 @@ import Offers from "../components/Home Page/Curated Offers/Offers";
 const OfferPage = () => {
   return (
     <div className="py-12">
-      <Offers />
+      <Offers showAll={true} />
     </div>
   );
 };

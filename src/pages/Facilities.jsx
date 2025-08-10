@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { Container, Card, CardContent, Typography, CardMedia } from "@mui/material";
 
 const facilities = [
   {
@@ -36,9 +36,9 @@ export default function OurFacilities() {
       >
         Our Facilities
       </Typography>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-12">
         {facilities.map((facility, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
+          <div key={index}>
             <Card sx={{ height: "100%", display: "flex", flexDirection: "column", borderRadius: "20px", boxShadow: 3 }}>
               <CardMedia
                 component="img"
@@ -58,9 +58,10 @@ export default function OurFacilities() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
+          </div>
         ))}
       </div>
     </Container>
   );
 }
+
