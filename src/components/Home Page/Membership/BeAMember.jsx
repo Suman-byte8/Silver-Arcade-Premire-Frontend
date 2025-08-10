@@ -1,5 +1,6 @@
 import React from 'react'
 import FullLogo from '../../FullLogo'
+import { Link } from 'react-router-dom'
 
 const BeAMember = () => {
   return (
@@ -26,9 +27,9 @@ const BeAMember = () => {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-4">
-        <button className="px-5 py-2 rounded-full border border-gray-400 text-gray-700 text-sm hover:bg-gray-100">
+        <Link to={"/membership-area"} className="px-5 py-2 rounded-full border border-gray-400 text-gray-700 text-sm hover:bg-gray-100">
           NOT A MEMBER? – JOIN NOW
-        </button>
+        </Link>
         <button className="px-5 py-2 rounded-full border border-gray-400 text-gray-700 text-sm hover:bg-gray-100">
           KNOW MORE
         </button>

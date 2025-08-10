@@ -10,6 +10,7 @@ import OurFacilities from './pages/Facilities';
 import OfferPage from './pages/OfferPage';
 import ReservationPage from './pages/ReservationPage';
 import OurHeartMalda from './pages/HeartMalda';
+import Membership from './pages/Membership';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/our-offers" element={<OfferPage />}/>
           <Route path="/reservation" element={<ReservationPage />}/>
           <Route path="/heart-malda" element={<OurHeartMalda />}/>
+          <Route path="/membership-area" element={<Membership />}/>
 
         </Routes>
         <Footer/>
