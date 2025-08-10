@@ -61,6 +61,16 @@ Over the course of our collaboration, the following key tasks have been accompli
     *   **Navigation Links:** Provides quick links to important pages like "About," "Contact," "Privacy Policy," and "Terms of Service."
     *   **Copyright Information:** Shows the current year and company name for copyright purposes.
 
+## About Us Page
+
+*   **Page:** `src/pages/AboutUs.jsx`
+*   **Description:** A comprehensive "About Us" page that provides visitors with a deeper understanding of the hotel's brand, values, and offerings.
+*   **Components:**
+    *   **`IntroText.jsx`**: A welcoming text that introduces the hotel and its unique selling propositions.
+    *   **`Amenities.jsx`**: Showcases the hotel's amenities, such as the rooftop lounge, bar, and fine dining, using a card-based layout.
+    *   **`Service.jsx`**: Highlights the exceptional services offered, including 24/7 concierge, luxury spa, and event planning.
+    *   **`Gallery.jsx`**: A photo gallery that provides a visual tour of the hotel.
+
 ## Deployment & Bug Fixes
 
 This section documents critical fixes and updates made to ensure successful deployment and enhance functionality.

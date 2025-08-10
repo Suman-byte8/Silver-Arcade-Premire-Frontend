@@ -1,5 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 // Define the navigation links
 const navLinks = [
@@ -26,9 +28,9 @@ const Navbar = () => {
         <ul className="">
           {navLinks.map((link, index) => (
             <li key={index} className="inline-block mx-2">
-              <a href={link.path} className="text-white hover:text-gray-300">
+              <Link to={link.path} className="text-white hover:text-gray-300">
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

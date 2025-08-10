@@ -12,13 +12,11 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Carousel />
-      <Distinctive/>
-      <Offers/>
-      <BeAMember/>
-      <Contact/>
-      <Footer/>
+      <Distinctive />
+      <Offers />
+      <BeAMember />
+      <Contact />
     </div>
   );
 };
