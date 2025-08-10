@@ -15,7 +15,7 @@ import Membership from './pages/Membership';
 const App = () => {
   return (
     <Router>
-      <div className=''>
+      <div className='font-helvetica-neue'>
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

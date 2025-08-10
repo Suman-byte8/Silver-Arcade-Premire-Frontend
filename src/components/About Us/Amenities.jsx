@@ -31,7 +31,7 @@ const Amenities = () => {
     <div className="w-full bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center text-gray-800">
+        <h2 className="text-3xl md:text-4xl mb-10 text-center text-gray-800 font-light tracking-wide">
           Our Amenities
         </h2>
 

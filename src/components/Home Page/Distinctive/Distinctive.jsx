@@ -78,7 +78,7 @@ const Distinctive = () => {
       
       {/* desc*/}
       <div className="w-full sm:w-[90%] md:w-[80%] text-center">
-        <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
+        <p className="text-sm sm:text-base lg:text-lg leading-relaxed ">
           With over 140+ hotels in 90+ destinations across six vibrant brands,
           ITC Hotels Limited integrates India's renowned tradition of
           hospitality and warmth, with globally benchmarked facilities &
@@ -88,7 +88,7 @@ const Distinctive = () => {
       
       {/* title */}
       <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4">
-        <h1 className="">Distinctive, distinguished brands</h1>
+        <h1 className="font-helvetica-neue font-light text-gray-800">Distinctive, distinguished brands</h1>
       </div>
 
       {/* links */}

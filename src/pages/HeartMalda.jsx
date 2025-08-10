@@ -89,11 +89,11 @@ export default function OurHeartMalda() {
           <div className="max-w-4xl">
             <div className="flex items-center justify-center mb-4">
               <FaMapMarkerAlt className="text-3xl mr-3 animate-pulse" />
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+              <h1 className="text-5xl md:text-6xl font-medium tracking-tight">
                 Our Heart Malda
               </h1>
             </div>
-            <p className="text-xl md:text-2xl font-light mb-6 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl font-thin mb-6 max-w-3xl mx-auto leading-relaxed">
               Where History Meets Hospitality, Culture Meets Cuisine, and Every
               Moment Creates Memories
             </p>
@@ -120,7 +120,7 @@ export default function OurHeartMalda() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
-                <div className="text-4xl md:text-5xl font-bold text-yellow-600 mb-2 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl md:text-5xl font-medium text-yellow-600 mb-2 group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -135,10 +135,10 @@ export default function OurHeartMalda() {
         <div className="max-w-6xl mx-auto px-4">
           {/* Introduction */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-4xl font-light text-gray-800 mb-6">
               Discover the Magic of Malda
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
               Nestled in the historic heart of West Bengal, Malda is a blend of
               cultural heritage, lush landscapes, and warm hospitality. Explore
               the vibrant bazaars, taste the world-famous mangoes, and step back
@@ -190,11 +190,11 @@ export default function OurHeartMalda() {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-gradient-to-r from-yellow-600 to-orange-600 rounded-2xl p-8 md:p-12 text-center text-white">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="bg-gradient-to-r from-yellow-600 to-orange-600 rounded-2xl font-thin p-8 md:p-12 text-center text-white">
+            <h3 className="text-3xl md:text-4xl  mb-4">
               Ready to Experience Malda?
             </h3>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto ">
               Book your stay with us and immerse yourself in the rich culture,
               delicious cuisine, and warm hospitality of our beloved city.
             </p>

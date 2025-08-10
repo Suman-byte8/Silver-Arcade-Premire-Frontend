@@ -44,7 +44,7 @@ const Offers = ({ showAll = false }) => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center pb-12">
-      <h1 className="text-4xl">Our Curated Offers</h1>
+      <h1 className="text-4xl font-light tracking-wide text-center mb-8 uppercase">Our Curated Offers</h1>
       <div className="w-full px-8 mt-8 flex flex-wrap justify-center gap-4">
         {
             offersToShow.map((offer, index) => {
