@@ -6,7 +6,10 @@ import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AboutUs from './pages/AboutUs';
-
+import OurFacilities from './pages/Facilities';
+import OfferPage from './pages/OfferPage';
+import ReservationPage from './pages/ReservationPage';
+import OurHeartMalda from './pages/HeartMalda';
 
 const App = () => {
   return (
@@ -18,6 +21,10 @@ const App = () => {
           <Route path="/our-rooms" element={<OurRooms />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/our-facilities" element={<OurFacilities />}/>
+          <Route path="/our-offers" element={<OfferPage />}/>
+          <Route path="/reservation" element={<ReservationPage />}/>
+          <Route path="/heart-malda" element={<OurHeartMalda />}/>
         </Routes>
         <Footer/>
       </div>

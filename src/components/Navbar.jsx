@@ -8,8 +8,8 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Reservation", path: "/reservation" },
   { name: "Our Rooms", path: "/our-rooms" },
-  { name: "Our Facilities", path: "/facilities" },
-  { name: "Our Wings", path: "/wings" },
+  { name: "Our Facilities", path: "/our-facilities" },
+  { name: "Our Wings", path: "/our-offers" },
   { name: "About Us", path: "/about-us" },
   { name: "Our Heart Malda", path: "/heart-malda" },
 ];

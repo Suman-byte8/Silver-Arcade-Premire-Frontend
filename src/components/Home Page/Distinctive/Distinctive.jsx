@@ -43,7 +43,7 @@ const Distinctive = () => {
       name: "Story",
       desc: "Story Hotels provide a narrative-driven experience, blending local culture with modern luxury.",
       img: [
-        "https.www.itchotels.com/content/dam/itchotels/in/umbrella/images/brands-desktop/storii-ii.jpg",
+        "https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/brands-desktop/storii-ii.jpg",
         "https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/brands-desktop/storii-i.jpg",
         "https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/brands-desktop/storii-iii.jpg",
       ],
@@ -72,30 +72,35 @@ const Distinctive = () => {
   };
 
   return (
-    <div className="w-full py-12 pb-20 m-auto flex flex-col items-center justify-center gap-4">
+    <div className="w-full py-8 sm:py-12 pb-16 sm:pb-20 m-auto flex flex-col items-center justify-center gap-4 px-4 sm:px-6 lg:px-8">
       {/* logo */}
       <FullLogo isFlex={true}/>
+      
       {/* desc*/}
-      <div className="w-[80%] text-center">
-        <p className="">
+      <div className="w-full sm:w-[90%] md:w-[80%] text-center">
+        <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
           With over 140+ hotels in 90+ destinations across six vibrant brands,
           ITC Hotels Limited integrates India's renowned tradition of
           hospitality and warmth, with globally benchmarked facilities &
           services.
         </p>
       </div>
+      
       {/* title */}
-      <div className="text-4xl font-bold text-center">
+      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-center px-4">
         <h1 className="">Distinctive, distinguished brands</h1>
       </div>
 
       {/* links */}
-      <div className="_links flex flex-wrap items-center justify-center gap-8 text-lg">
+      <div className="_links flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base lg:text-lg px-4">
         {links.map((link, index) => (
           <a
             key={index}
-            // href="#"
-            className={`px-4 py-2 cursor-pointer ${selectedLink.name === link.name ? "border-b-2 border-gray-500" : ""}`}
+            className={`px-2 sm:px-4 py-2 cursor-pointer transition-all duration-300 ${
+              selectedLink.name === link.name 
+                ? "border-b-2 border-gray-500 font-semibold" 
+                : "hover:border-b-2 border-gray-300"
+            }`}
             onClick={() => handleLinkClick(link.name)}
           >
             {link.name}
@@ -104,7 +109,9 @@ const Distinctive = () => {
       </div>
 
       {/* description layout */}
-      <DescLayout desc={selectedLink} />
+      <div className="w-full">
+        <DescLayout desc={selectedLink} />
+      </div>
     </div>
   );
 };

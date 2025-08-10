@@ -11,7 +11,7 @@ const DescLayout = ({ desc }) => {
 
   return (
     <div className="w-full relative h-[70vh]">
-      <div className="w-[55%] border-2 border-gray-500 rounded-lg h-full border-l-0 rounded-tl-none rounded-bl-none absolute left-0 top-0">
+      <div className="w-[55%] border-2 border-gray-200 rounded-lg h-full border-l-0 rounded-tl-none rounded-bl-none absolute left-0 top-0">
         <div className="w-[calc(100vw*0.45)] p-4 flex flex-col items-center justify-center gap-4">
             <FullLogo isFlex={false}/>
           {/* <p className="text-center w-full p-2">{desc.desc}</p> */}

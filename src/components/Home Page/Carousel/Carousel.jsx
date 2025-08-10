@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import banner1 from "../../../assets/Home/banner1.jpeg";
 import banner2 from "../../../assets/Home/banner2.jpg";
 import banner3 from "../../../assets/Home/banner3.jpg";
+
 const Carousel = () => {
   const slides = [
     {
@@ -31,12 +32,13 @@ const Carousel = () => {
       },
     },
   ];
+  
   return (
     <div className="w-full">
-      <div className="carousel-container relative w-full h-[90vh] bg-gray-200 flex items-center justify-center overflow-hidden">
+      <div className="carousel-container relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] bg-gray-200 flex items-center justify-center overflow-hidden">
         <SemiNavbar />
         <Slider slides={slides} showDetails={true}/>
-        <div className="absolute bottom-0 w-full flex justify-center pb-4 z-10">
+        <div className="absolute bottom-0 w-full flex justify-center pb-2 sm:pb-4 z-10">
           <Booking />
         </div>
       </div>
